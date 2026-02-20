@@ -5,40 +5,47 @@ Este proyecto es una plantilla web profesional de 4 páginas
 (Inicio, Menú, Nosotros y Contacto) optimizada para móviles 
 y lista para ventas.
 
-CÓMO CAMBIAR EL NOMBRE Y CONFIGURACIÓN GENERAL
-Abre el archivo "config.js". Este es el "cerebro" del sitio.
-Solo debes cambiar los textos entre comillas para actualizar:
-- Nombre del local (Se actualizará en el logo y títulos automáticamente).
-- Número de WhatsApp.
-- Colores principales.
-- Horarios y Dirección.
+1. CONFIGURACIÓN GENERAL (EL CEREBRO DEL SITIO)
+--------------------------------------------------
+Abre el archivo "config.js". Solo debes cambiar los textos 
+entre comillas para actualizar todo el sitio a la vez:
+- nombreLocal: Cambia el nombre de la empresa.
+- lema: La frase principal que aparece en el Inicio.
+- telefonoWhatsApp: Número sin el símbolo '+' (Ej: 56926073767).
+- colorPrimario: Cambia el color de botones y detalles (Ej: #ff5733).
+- direccion y horario: Se actualizarán automáticamente en la web.
 
-CÓMO CAMBIAR EL TELÉFONO / WHATSAPP (MANUAL)
-Aunque el config.js lo hace automático, puedes buscar en los 4 
-archivos HTML la línea que contiene: href="https://wa.me/56926073767"
-Cambia el número (después del 569) por el del cliente.
+2. CÓMO CAMBIAR EL LOGO E IMÁGENES
+--------------------------------------------------
+- LOGO: Reemplaza la imagen en "imagenes/logo.png" por tu logo 
+  con el mismo nombre. El sitio mantendrá el logo y pondrá el 
+  nombre del local al lado automáticamente.
+- PLATOS Y FOTOS: Abre "menu.html" o "index.html". Busca las 
+  etiquetas <img>. Cambia el texto en src="..." por el nombre 
+  de tu nueva foto.
+  Ejemplo: <img src="imagenes/mi-plato.jpg">
+  (Recuerda guardar todas tus fotos en la carpeta "imagenes").
 
-CÓMO CAMBIAR LOS PRECIOS
-Abre el archivo "menu.html". Busca las etiquetas que tienen 
-la clase: class="price". Ejemplo: <span class="price">$8.500</span>
-Solo cambia el valor dentro del texto.
+3. CÓMO CAMBIAR PRECIOS Y PRODUCTOS
+--------------------------------------------------
+Abre el archivo "menu.html":
+- PRECIOS: Busca la clase class="price". 
+  Ejemplo: <span class="price">$8.500</span>. Solo cambia el número.
+- WHATSAPP POR PRODUCTO: Cada botón "Pedir" tiene un mensaje. 
+  Busca: text=Hola!%20Quiero%20pedir... y cambia el texto para 
+  que sepas qué plato te están pidiendo.
 
-CÓMO CAMBIAR LAS FOTOS (LOGO Y PLATOS)
-1. Logo: Reemplaza el archivo en "imagenes/logo.png".
-2. Platos/Galería: Abre "menu.html" o "index.html". Busca las 
-   etiquetas <img>. Cambia el texto dentro de src="..." por el 
-   nombre de tu foto. 
-   Ejemplo: <img src="imagenes/mi-comida.jpg">
-   (Asegúrate de que la foto esté dentro de la carpeta "imagenes").
+4. MENÚ DE NAVEGACIÓN
+--------------------------------------------------
+Si agregas una página nueva, debes añadir el link <li> 
+dentro de la etiqueta <ul class="nav-links"> en los 4 
+archivos HTML para que el menú sea igual en todas partes.
 
-CONFIGURACIÓN DEL MENÚ DE NAVEGACIÓN
-Si decides agregar una página nueva, debes añadir el link <li> 
-dentro de la etiqueta <ul class="nav-links"> de TODOS los 
-archivos HTML para que la navegación sea fluida y no se rompa.
-
-CONTACTO Y FORMULARIO
-En "contacto.html" puedes editar la dirección física y el 
-mensaje de éxito del formulario en el archivo "script.js".
+5. CONTACTO Y FORMULARIO
+--------------------------------------------------
+En "contacto.html" puedes editar los datos de ubicación. 
+El formulario de contacto ya viene configurado para enviar 
+una alerta de éxito al cliente.
 
 ================================================== 
 Diseñado por: Vannya Salinas

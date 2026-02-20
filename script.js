@@ -128,4 +128,15 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
+    // Funcionalidad Menú Hamburguesa
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.nav-links');
+
+if (menu) {
+    menu.addEventListener('click', function() {
+        menuLinks.classList.toggle('active');
+        // Opcional: animar las barritas
+        menu.classList.toggle('is-active');
+    });
+}
 });

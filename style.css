@@ -705,3 +705,46 @@ footer {
 @media (max-width: 900px) {
     .contact-container { flex-direction: column; }
 }
+/* Estilos para el botón hamburguesa */
+.menu-toggle {
+    display: none; /* Escondido en PC */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--oscuro);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* --- MEDIA QUERY PARA CELULARES --- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Aparece en móvil */
+    }
+
+    .nav-links {
+        display: none; /* Escondemos los links normales */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Ajusta según el alto de tu navbar */
+        left: 0;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex !important; /* El !important es clave aquí */
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}

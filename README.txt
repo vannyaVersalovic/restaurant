@@ -35,17 +35,19 @@ Abre el archivo "menu.html":
   Busca: text=Hola!%20Quiero%20pedir... y cambia el texto para 
   que sepas qué plato te están pidiendo.
 
-4. MENÚ DE NAVEGACIÓN
+4. MENÚ MÓVIL Y NAVEGACIÓN
 --------------------------------------------------
-Si agregas una página nueva, debes añadir el link <li> 
-dentro de la etiqueta <ul class="nav-links"> en los 4 
-archivos HTML para que el menú sea igual en todas partes.
+- El sitio incluye un menú inteligente (hamburguesa) para celulares.
+- IMPORTANTE: El botón <div class="menu-toggle"> debe estar fuera 
+  del contenedor del logo para funcionar correctamente.
+- Si agregas una página nueva, debes añadir el link <li> dentro de 
+  la etiqueta <ul class="nav-links"> en los 4 archivos HTML.
 
 5. CONTACTO Y FORMULARIO
 --------------------------------------------------
 En "contacto.html" puedes editar los datos de ubicación. 
 El formulario de contacto ya viene configurado para enviar 
-una alerta de éxito al cliente.
+una alerta de éxito al cliente mediante el archivo script.js.
 
 ================================================== 
 Diseñado por: Vannya Salinas

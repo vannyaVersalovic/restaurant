@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Sabor Local</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+    <img src="imagenes/logo.png" alt="Logo">
+    Sabor <span>Local</span>
+    </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="contact-header">
+        <h1>Ponte en Contacto</h1>
+        <p>¿Tienes dudas o quieres reservar para un evento? ¡Escríbenos!</p>
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-form-wrapper">
+            <h2>Envíanos un mensaje</h2>
+            <form id="contact-form">
+                <div class="input-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Ej: Juan Pérez" required>
+                </div>
+                <div class="input-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Asunto</label>
+                    <select>
+                        <option value="consulta">Consulta General</option>
+                        <option value="reserva">Reservas</option>
+                        <option value="evento">Eventos Especiales</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Mensaje</label>
+                    <textarea rows="5" placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>📍 Dirección</h3>
+                <p>Calle Falsa 123, Curicó, Maule, Chile</p>
+            </div>
+            
+            <div class="info-item">
+                <h3>⏰ Horario de Atención</h3>
+                <p><strong>Lunes a Viernes:</strong> 12:00 PM - 10:00 PM</p>
+                <p><strong>Sábados y Domingos:</strong> 11:00 AM - 11:00 PM</p>
+            </div>
+
+            <div class="info-item">
+                <h3>📱 Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" class="social-btn ig">Instagram</a>
+                    <a href="#" class="social-btn fb">Facebook</a>
+                </div>
+            </div>
+
+            <div class="map-placeholder">
+                <p>Aquí puedes insertar el mapa de Google Maps</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/56926073767" class="wsp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Sabor Local - Experiencia Gastronómica Profesional</p>
+    </footer>
+
+    <script src="config.js"></script> <script src="script.js"></script> </body>
+</body>
+</html>

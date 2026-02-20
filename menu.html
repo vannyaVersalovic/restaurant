@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Sabor Local</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+```
+<nav class="navbar">
+    <div class="logo">
+    <img src="imagenes/logo.png" alt="Logo">
+    Sabor <span>Local</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html" class="active">Menú</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<header class="menu-header">
+    <h1>Nuestra Carta</h1>
+    <p>Hecho con productos 100% orgánicos</p>
+</header>
+
+<section class="menu-filters">
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="salado">Salado</button>
+        <button class="filter-btn" data-filter="dulce">Dulce</button>
+        <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+    </div>
+    <div class="search-box">
+        <input type="text" id="menuSearch" placeholder="Busca tu plato favorito...">
+    </div>
+</section>
+
+<section class="menu-container">
+    <div class="menu-grid" id="menuGrid">
+
+        <!-- ================= SALADO ================= -->
+
+        <div class="menu-item" data-category="salado">
+            <img src="imagenes/photo-1568901346375-23c9450c58cd.jpg" alt="Burger">
+            <div class="item-details">
+                <h3>Burger Premium</h3>
+                <p>Carne angus, doble queso, tocino y salsa secreta.</p>
+                <div class="item-footer">
+                    <span class="price">$8.500</span>
+                    <a href="https://wa.me/56926073767?text=Hola! Quiero pedir la Burger Premium" class="btn-order">Pedir</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item" data-category="salado">
+            <img src="imagenes/650_1200.jpg" alt="Burger">
+            <div class="item-details">
+                <h3>Salmón Avocado Egg</h3>
+                <p>Sándwich de huevo, salmón y palta en pan tostado con aderezo cremoso.</p>
+                <div class="item-footer">
+                    <span class="price">$8.500</span>
+                    <a href="https://wa.me/56926073767?text=Hola! Quiero pedir la Salmón Avocado Egg" class="btn-order">Pedir</a>
+                </div>
+            </div>
+        </div>
+        <!-- ================= DULCE ================= -->
+
+        <div class="menu-item" data-category="dulce">
+            <img src="imagenes/istockphoto-1753975566-612x612.jpg" alt="Donas">
+            <div class="item-details">
+                <h3>Donas Artesanales</h3>
+                <p>Pack de 4 donas rellenas.</p>
+                <div class="item-footer">
+                    <span class="price">$5.000</span>
+                    <a href="#" class="btn-order">Pedir</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dulce">
+            <img src="imagenes/photo-1551024506-0bccd828d307.jpg" alt="Brownie">
+            <div class="item-details">
+                <h3>Brownie Tentación</h3>
+                <p>Brownie con helado.</p>
+                <div class="item-footer">
+                    <span class="price">$8.000</span>
+                    <a href="#" class="btn-order">Pedir</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dulce">
+            <img src="imagenes/images.jpg" alt="Torta">
+            <div class="item-details">
+                <h3>Torta del Día</h3>
+                <p>Porción de torta casera.</p>
+                <div class="item-footer">
+                    <span class="price">$4.500</span>
+                    <a href="#" class="btn-order">Pedir</a>
+                </div>
+            </div>
+        </div>
+        <!-- ================= BEBIDAS ================= -->
+
+        <div class="menu-item" data-category="bebidas">
+            <img src="imagenes/bebidas-refrescantes-992x640.jpg" alt="Limonada">
+            <div class="item-details">
+                <h3>Limonada Menta Jengibre</h3>
+                <p>Refrescante limonada natural de 500cc.</p>
+                <div class="item-footer">
+                    <span class="price">$3.500</span>
+                    <a href="https://wa.me/56926073767?text=Hola! Quiero pedir la Limonada" class="btn-order">Pedir</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item" data-category="bebidas">
+            <img src="imagenes/ee3f42ae97d810aa1e73c78d2c95cba1.jpg" alt="Limonada">
+            <div class="item-details">
+                <h3>Cóctel Rojo con Merkén</h3>
+                <p>Refrescante cóctel rojo de 500cc con borde escarchado en merkén.</p>
+                <div class="item-footer">
+                    <span class="price">$3.500</span>
+                    <a href="https://wa.me/56926073767?text=Hola! Quiero pedir la Cóctel Rojo con Merkén" class="btn-order">Pedir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/56926073767" class="wsp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<script src="config.js"></script> <script src="script.js"></script> </body>
+
+</body>
+</html>
